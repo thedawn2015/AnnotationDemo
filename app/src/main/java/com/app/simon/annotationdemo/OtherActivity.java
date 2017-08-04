@@ -14,6 +14,12 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
+/**
+ * desc: 这个类主要用了反射
+ * date: 2017/8/4
+ *
+ * @author xw
+ */
 public class OtherActivity extends AppCompatActivity {
     /** TAG */
     public static final String TAG = OtherActivity.class.getSimpleName();
