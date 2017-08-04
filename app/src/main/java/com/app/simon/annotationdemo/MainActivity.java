@@ -2,21 +2,14 @@ package com.app.simon.annotationdemo;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-
-import com.app.simon.annotationdemo.model.AnTest;
 
 public class MainActivity extends AppCompatActivity {
     /** TAG */
     public static final String TAG = MainActivity.class.getSimpleName();
 
-    public static int id;
-    private String name;
-
     private android.widget.Button btntoother;
-    private AnTest anTest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,16 +30,5 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initData() {
-        id = 10;
-        name = "Simon";
-
-        anTest = new AnTest();
-        anTest.setId(110);
-        anTest.setName("大侠");
-        anTest.setPhone(String.valueOf(1588888888));
-    }
-
-    private void printSS(String s) {
-        Log.i(TAG, "printSS: " + s);
     }
 }
