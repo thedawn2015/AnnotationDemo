@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showName() {
-        Log.i(TAG, "onCreate: authorName=" + authorName);
-        Log.i(TAG, "onCreate: aName=" + aName);
+        Log.i(TAG, "showName: authorName=" + authorName);
+        Log.i(TAG, "showName: aName=" + aName);
     }
 
     private void assignViews() {
