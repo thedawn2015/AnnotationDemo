@@ -2,6 +2,7 @@ package com.app.simon.annotationdemo;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -11,12 +12,26 @@ public class MainActivity extends AppCompatActivity {
 
     private android.widget.Button btntoother;
 
+    @NewName(name = "DaXia")
+    public String authorName;
+
+    @NewName
+    public String aName = "name";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initData();
         assignViews();
+
+        NewNameProvider.bind(this);
+        showName();
+    }
+
+    private void showName() {
+        Log.i(TAG, "onCreate: authorName=" + authorName);
+        Log.i(TAG, "onCreate: aName=" + aName);
     }
 
     private void assignViews() {
